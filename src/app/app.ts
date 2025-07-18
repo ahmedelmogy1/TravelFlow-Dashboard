@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
+import { LogIn } from "./components/log-in/log-in";
+import { Dashboard } from "./components/dashboard/dashboard";
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CardModule, ButtonModule, Dashboard],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
