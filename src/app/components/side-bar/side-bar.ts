@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MessageModule } from 'primeng/message';
 
 @Component({
@@ -10,7 +10,7 @@ import { MessageModule } from 'primeng/message';
 })
 export class SideBar {
 
-  stateSideBar:boolean=true;
+  @Input() stateSideBar:boolean=true
   changeState():void{
    if(this.stateSideBar)
      this.stateSideBar=false;

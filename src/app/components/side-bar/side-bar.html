@@ -1,8 +1,9 @@
-<div class=" w-[270px] h-[100vh] font-PlusJakartaSans p-1 border-gray-200 border-e-[0.5px]  transition-transform duration-700 relative"
-    [ngClass]="{'translate-x-[-270px]':!stateSideBar}">
+<div class=" w-[320px] h-[100vh] font-PlusJakartaSans p-1 border-gray-200 border-e-[0.5px] 
+ transition-all duration-700  relative  "
+    [ngClass]="{'-ms-[320px]':!stateSideBar}">
     <div class="flex flex-col content-between justify-between h-full">
         <div class="w-full flex justify-between gap-2 items-center mt-4 mb-4 px-3">
-            <div class="flex gap-2 items-center">
+            <div class="flex gap-2 items-center overflow-hidden flex-nowrap text-nowrap">
                 <img src="./assets/image/earth.png" alt="earth" class="w-8" />
                 <h2 class=" text-shadow-transparent text-lg font-bold ">TravelFlow</h2>
             </div>
@@ -10,8 +11,8 @@
                 (click)="changeState()"
                 [ngClass]="{'!-right-9 pi-angle-double-right':!stateSideBar,'pi-angle-double-left':stateSideBar}"></i>
         </div>
-        <div class="h-full flex flex-col justify-between py-8 content-around border-t-[1px] border-gray-200">
-            <div class=" flex flex-col px-5   " >
+        <div class="h-full flex flex-col justify-between py-8 content-around border-t-[1px] border-gray-200 overflow-hidden">
+            <div class=" flex flex-col px-5  flex-nowrap text-nowrap" >
                 <a href="#"
                     class=" bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-2 rounded-lg transition duration-200 ease-in-out mb-7 text-lg font-meduim">
                     <i class="pi pi-home me-1"></i> Dashboard</a>
@@ -23,13 +24,13 @@
                         class="pi pi-map me-1"></i>Ai
                     Trips</a>
             </div>
-            <div class="flex justify-between items-center px-4">
-                <div class="flex gap-2.5 justify-center items-center">
+            <div class="flex justify-between items-center px-4 flex-nowrap text-nowrap">
+                <div class="flex gap-2.5 justify-center items-center pe-11">
                     <span class="w-10 h-10 rounded-full overflow-hidden inline-block"><img class="w-full"
                             src="../../../assets/image/man.png" alt=""></span>
                     <h2 class="font-PlusJakartaSans font-bold">ahmed elmogy</h2>
                 </div>
-                <i class="pi pi-sign-out text-red-700"></i>
+                <i class="pi pi-sign-out text-red-700 ps-1.5"></i>
             </div>
         </div>
     </div>

@@ -1,1 +1,163 @@
-<p>dashboard-visual works!</p>
+<section class="bg-gray-100  ">
+    <div class="  w-[95%] 3xl:w-[80%]  mx-auto px-3  font-PlusJakartaSans   ">
+    <div class="flex justify-between ">
+        <div class="flex flex-col justify-center">
+            <h2 class="font-bold">Welcome Ahmed 👋</h2>
+            <h3 class="font-light  text-gray-500">Track activity,trends,and popular destinations in real time</h3>
+        </div>
+        <div class="">
+            <button
+                class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg transition duration-200 ease-in-out mb-7 text-lg font-meduim px-4">
+                <i class="pi pi-plus"></i> create trip</button>
+        </div>
+    </div>
+    <div class="grid grid-cols-3  ">
+        <div class="mx-auto   ">
+            <div class="bg-white px-9 py-9 rounded-lg shadow-lg">
+                <div class="my-3">
+                    <h3 class="font-semibold ">Totla Users</h3>
+                </div>
+                <div class=" flex gap-5">
+                    <div class="flex justify-center gap-2 flex-col">
+                        <h4 class="text-3xl font-bold">12,000</h4>
+                        <p class="font-light  text-gray-500"><i class="pi pi-arrow-up text-green-600 !text-[14px]"></i>
+                            <span>12% </span> vs last month</p>
+                    </div>
+                    <div class="w-[128px] h-[64px] ">
+                         <p-chart type="line" [data]="dataGraph1" [options]="optionGraph1"
+                            class="w-[100%] h-[100%] block"></p-chart>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mx-auto   ">
+            <div class="bg-white px-9 py-9  rounded-lg shadow-lg">
+                <div class="my-3">
+                    <h3 class="font-semibold ">Total Trips</h3>
+                </div>
+                <div class=" flex gap-5">
+                    <div class="flex justify-center gap-2 flex-col">
+                        <h4 class="text-3xl font-bold">12,000</h4>
+                        <p class="font-light  text-gray-500"><i class="pi pi-arrow-up text-green-600 !text-[14px]"></i>
+                            <span>12% </span> vs last month</p>
+                    </div>
+                    <div class="w-[128px] h-[64px] ">
+                         <p-chart type="line" [data]="dataGraph1" [options]="optionGraph1"
+                            class="w-[100%] h-[100%] block"></p-chart>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+           <div class="mx-auto   ">
+            <div class="bg-white px-9 py-9  rounded-lg shadow-lg">
+                <div class="my-3">
+                    <h3 class="font-semibold ">Totla Users</h3>
+                </div>
+                <div class=" flex gap-5">
+                    <div class="flex justify-center gap-2 flex-col">
+                        <h4 class="text-3xl font-bold">12,000</h4>
+                        <p class="font-light  text-gray-500"><i class="pi pi-arrow-up text-green-600 !text-[14px]"></i>
+                            <span>12% </span> vs last month</p>
+                    </div>
+                    <div class="w-[128px] h-[64px] ">
+                         <p-chart type="line" [data]="dataGraph1" [options]="optionGraph1"
+                            class="w-[100%] h-[100%] block"></p-chart>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+         
+         
+    </div>
+    
+<!-- ======================================================= -->
+ <div>
+    <h3 class="text-[20px] font-bold my-5 px-1.5">Trips</h3>
+    <div class="grid grid-cols-4 gap-3.5 ">
+        <p-card class="rounded-2xl overflow-hidden !shadow-xl" >
+    <ng-template #header>
+        <img alt="Card" class="w-full" src="./assets/image/sample.jpeg" />
+    </ng-template>
+    <ng-template #title> Advanced Card </ng-template>
+    <ng-template #subtitle> Card subtitle </ng-template>
+   
+    <ng-template #footer>
+        <div class="flex gap-4 mt-1">
+           <span class="bg-green-200 px-3 py-2 rounded-3xl text-green-800">mountains</span>
+           <span class="bg-red-200 px-5 py-2 rounded-3xl text-red-800">city</span>
+        </div>
+    </ng-template>
+</p-card>
+        <p-card class="rounded-2xl overflow-hidden !shadow-xl" >
+    <ng-template #header>
+        <img alt="Card" class="w-full" src="./assets/image/sample.jpeg" />
+    </ng-template>
+    <ng-template #title> Advanced Card </ng-template>
+    <ng-template #subtitle> Card subtitle </ng-template>
+   
+    <ng-template #footer>
+        <div class="flex gap-4 mt-1">
+           <span class="bg-green-200 px-3 py-2 rounded-3xl text-green-800">mountains</span>
+           <span class="bg-red-200 px-5 py-2 rounded-3xl text-red-800">city</span>
+        </div>
+    </ng-template>
+</p-card>
+        <p-card class="rounded-2xl overflow-hidden !shadow-xl" >
+    <ng-template #header>
+        <img alt="Card" class="w-full" src="./assets/image/sample.jpeg" />
+    </ng-template>
+    <ng-template #title> Advanced Card </ng-template>
+    <ng-template #subtitle> Card subtitle </ng-template>
+   
+    <ng-template #footer>
+        <div class="flex gap-4 mt-1">
+           <span class="bg-green-200 px-3 py-2 rounded-3xl text-green-800">mountains</span>
+           <span class="bg-red-200 px-5 py-2 rounded-3xl text-red-800">city</span>
+        </div>
+    </ng-template>
+</p-card>
+        <p-card class="rounded-2xl overflow-hidden !shadow-xl" >
+    <ng-template #header>
+        <img alt="Card" class="w-full" src="./assets/image/sample.jpeg" />
+    </ng-template>
+    <ng-template #title> Advanced Card </ng-template>
+    <ng-template #subtitle> Card subtitle </ng-template>
+   
+    <ng-template #footer>
+        <div class="flex gap-4 mt-1">
+           <span class="bg-green-200 px-3 py-2 rounded-3xl text-green-800">mountains</span>
+           <span class="bg-red-200 px-5 py-2 rounded-3xl text-red-800">city</span>
+        </div>
+    </ng-template>
+</p-card>
+
+    </div>
+</div>
+<!-- ======================================================== -->
+
+ <div class="grid grid-cols-2 my-9 gap-4 place-content-center justify-  ">
+         <div class=" bg-white  px-8 py-12 rounded-2xl shadow-xl h-[350px]">
+                         <p-chart type="bar" [data]="dataGraph2" [options]="optionGraph2"
+                            class="!w-[100%] !h-[100%] block"></p-chart>
+                        </div>
+
+
+<!-- ================================================================================ -->
+  <div class="bg-white  px-8 py-12 rounded-2xl shadow-xl ">
+                         <p-chart type="bar" [data]="dataGraph3" [options]="optionGraph3"
+                            class="w-[100%] h-[100%] block"></p-chart>
+                        </div>
+         
+</div>
+ </div>
+
+<!-- ======================================================= -->
+
+
+
+
+
+</section>
