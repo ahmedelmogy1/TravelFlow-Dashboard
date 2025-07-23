@@ -1,11 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { ChartModule } from 'primeng/chart';
 
+import { TableModule } from 'primeng/table';
 @Component({
   selector: 'app-dashboard-visual',
-  imports: [ChartModule,CardModule,ButtonModule ],
+  imports: [ChartModule,CardModule,ButtonModule,TableModule,CommonModule ],
   templateUrl: './dashboard-visual.html',
   styleUrl: './dashboard-visual.css'
 })
@@ -17,6 +19,18 @@ export class DashboardVisual implements OnInit {
   optionGraph2: any;
   optionGraph3: any;
 
+products = [
+  { code: 'P100', name: 'Product 1'},
+  { code: 'P200', name: 'Product 2' },
+  { code: 'P300', name: 'Product 3' },
+  { code: 'P300', name: 'Product 3' }
+];
+products2 = [
+  { code: 'P100', name: 'Jun 02 - Jun 12'},
+  { code: 'P200', name: 'Jun 02 - Jun 12' },
+  { code: 'P300', name: 'Jun 02 - Jun 12' },
+  { code: 'P300', name: 'Jun 02 - Jun 12' }
+];
   
   ngOnInit(): void {
     this.dataGraph1 = {
